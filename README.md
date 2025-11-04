@@ -32,15 +32,16 @@ It demonstrates **best practices in QA Automation**, including a modular structu
 
 ---
 
-## 🚀 Project Structure
-📁 src
-┣ 📂 main/java
-┃ ┣ 📂 pages/ # Page objects
-┃ ┣ 📂 utils/ # Utilities (driver, config, helpers)
-┃ ┣ 📂 core/ # Core framework components (BaseTest, DriverManager, etc.)
-┣ 📂 test/java
-┃ ┣ 📂 tests/ # Test classes / suites
-┣ 📄 pom.xml # Maven dependencies & plugins
-┣ 📄 config.properties # Configuration for browser, base URL, etc.
-┣ 📄 testng.xml # (if using TestNG) suite definition
-README.md
+## 📁 Project Structure
+
+- **src/**
+  - **main/java/**
+    - `pages/` → Page Objects
+    - `utils/` → Utilities (driver, config, helpers)
+    - `core/` → Core framework components (BaseTest, DriverManager, etc.)
+  - **test/java/**
+    - `tests/` → Test classes / suites
+- `pom.xml` → Maven dependencies & plugins
+- `config.properties` → Configuration (browser, base URL, etc.)
+- `testng.xml` → TestNG suite definition
+- `README.md`
