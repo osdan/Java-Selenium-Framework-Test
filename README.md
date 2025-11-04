@@ -26,8 +26,8 @@ It demonstrates **best practices in QA Automation**, including a modular structu
 | Test Framework | TestNG / JUnit 5 |
 | Web Automation | Selenium WebDriver |
 | Build Tool | Maven |
-| Logging / Reports | Log4j / Extent Reports |
-| IDE | Eclipse IDE / IntelliJ IDEA |
+| Logging / Reports | (in development) |
+| IDE | Eclipse IDE |
 | Version Control | Git / GitHub |
 
 ---
