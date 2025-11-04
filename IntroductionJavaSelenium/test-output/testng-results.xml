@@ -1,40 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-16T09:16:23 CST" name="Default suite" finished-at="2025-07-16T09:16:39 CST" duration-ms="15460">
+  <suite started-at="2025-11-03T18:42:19 CST" name="Default suite" finished-at="2025-11-03T18:42:30 CST" duration-ms="11598">
     <groups>
-      <group name="smoke">
-        <method signature="test_practice_1.s01_Launch_browser()[pri:0, instance:interview.test_practice_1@6bb4dd34]" name="s01_Launch_browser" class="interview.test_practice_1"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-07-16T09:16:23 CST" name="Default test" finished-at="2025-07-16T09:16:39 CST" duration-ms="15460">
-      <class name="interview.test_practice_1">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:interview.test_practice_1@6bb4dd34]" started-at="2025-07-16T09:16:23 CST" name="setUp" finished-at="2025-07-16T09:16:26 CST" duration-ms="2939" status="PASS">
+    <test started-at="2025-11-03T18:42:19 CST" name="Default test" finished-at="2025-11-03T18:42:30 CST" duration-ms="11598">
+      <class name="Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:19 CST" name="setUp" finished-at="2025-11-03T18:42:20 CST" duration-ms="1228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="s01_Launch_browser()[pri:0, instance:interview.test_practice_1@6bb4dd34]" started-at="2025-07-16T09:16:26 CST" name="s01_Launch_browser" finished-at="2025-07-16T09:16:26 CST" duration-ms="46" status="PASS">
+        <test-method signature="s01_Launch_browser()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:20 CST" name="s01_Launch_browser" finished-at="2025-11-03T18:42:20 CST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- s01_Launch_browser -->
-        <test-method signature="s02_Navigate_to_url()[pri:0, instance:interview.test_practice_1@6bb4dd34]" started-at="2025-07-16T09:16:26 CST" name="s02_Navigate_to_url" finished-at="2025-07-16T09:16:37 CST" duration-ms="11039" status="PASS">
+        <test-method signature="s02_Navigate_to_url()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:20 CST" name="s02_Navigate_to_url" finished-at="2025-11-03T18:42:22 CST" duration-ms="2352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- s02_Navigate_to_url -->
-        <test-method signature="s03_Verify_that_home_page_is_visible_successfully()[pri:0, instance:interview.test_practice_1@6bb4dd34]" started-at="2025-07-16T09:16:37 CST" name="s03_Verify_that_home_page_is_visible_successfully" finished-at="2025-07-16T09:16:38 CST" duration-ms="523" status="PASS">
+        <test-method signature="s03_Verify_that_home_page_is_visible_successfully()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:22 CST" name="s03_Verify_that_home_page_is_visible_successfully" finished-at="2025-11-03T18:42:22 CST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- s03_Verify_that_home_page_is_visible_successfully -->
-        <test-method signature="s04_Loggin()[pri:0, instance:interview.test_practice_1@6bb4dd34]" started-at="2025-07-16T09:16:38 CST" name="s04_Loggin" finished-at="2025-07-16T09:16:38 CST" duration-ms="237" status="PASS">
+        <test-method signature="s04_Click_on_signup_login_button()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:22 CST" name="s04_Click_on_signup_login_button" finished-at="2025-11-03T18:42:23 CST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- s04_Loggin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:interview.test_practice_1@6bb4dd34]" started-at="2025-07-16T09:16:38 CST" name="tearDown" finished-at="2025-07-16T09:16:39 CST" duration-ms="629" status="PASS">
+        </test-method> <!-- s04_Click_on_signup_login_button -->
+        <test-method signature="s05_Verify_new_user_signup_is_visible()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:23 CST" name="s05_Verify_new_user_signup_is_visible" finished-at="2025-11-03T18:42:23 CST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s05_Verify_new_user_signup_is_visible -->
+        <test-method signature="s06_Enter_name_and_email_address()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:23 CST" name="s06_Enter_name_and_email_address" finished-at="2025-11-03T18:42:23 CST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s06_Enter_name_and_email_address -->
+        <test-method signature="s07_Click_signup_button()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:23 CST" name="s07_Click_signup_button" finished-at="2025-11-03T18:42:24 CST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s07_Click_signup_button -->
+        <test-method signature="s08_Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:24 CST" name="s08_Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible" finished-at="2025-11-03T18:42:24 CST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s08_Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible -->
+        <test-method signature="s09_Fill_details_Title_Name_Email_Password_Date_of_birth()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:24 CST" name="s09_Fill_details_Title_Name_Email_Password_Date_of_birth" finished-at="2025-11-03T18:42:24 CST" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s09_Fill_details_Title_Name_Email_Password_Date_of_birth -->
+        <test-method signature="s10_Select_checkbox_sign_up_for_our_newsletter()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:24 CST" name="s10_Select_checkbox_sign_up_for_our_newsletter" finished-at="2025-11-03T18:42:24 CST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s10_Select_checkbox_sign_up_for_our_newsletter -->
+        <test-method signature="s11_Select_checkbox_Receive_special_offers_from_our_partners()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:24 CST" name="s11_Select_checkbox_Receive_special_offers_from_our_partners" finished-at="2025-11-03T18:42:25 CST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s11_Select_checkbox_Receive_special_offers_from_our_partners -->
+        <test-method signature="s12_Fill_details_First_name_Last_name_Company_Address_Address2_Country_State_City_Zipcode_Mobile_Number()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:25 CST" name="s12_Fill_details_First_name_Last_name_Company_Address_Address2_Country_State_City_Zipcode_Mobile_Number" finished-at="2025-11-03T18:42:25 CST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s12_Fill_details_First_name_Last_name_Company_Address_Address2_Country_State_City_Zipcode_Mobile_Number -->
+        <test-method signature="s13_Click_Create_Account_button()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:25 CST" name="s13_Click_Create_Account_button" finished-at="2025-11-03T18:42:26 CST" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s13_Click_Create_Account_button -->
+        <test-method signature="s14_Verify_that_ACCOUNT_CREATED_is_visible()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:26 CST" name="s14_Verify_that_ACCOUNT_CREATED_is_visible" finished-at="2025-11-03T18:42:26 CST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s14_Verify_that_ACCOUNT_CREATED_is_visible -->
+        <test-method signature="s15_Click_continue_button()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:26 CST" name="s15_Click_continue_button" finished-at="2025-11-03T18:42:27 CST" duration-ms="1135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s15_Click_continue_button -->
+        <test-method signature="s16_Verify_that_logged_in_as_username_is_visible()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:27 CST" name="s16_Verify_that_logged_in_as_username_is_visible" finished-at="2025-11-03T18:42:28 CST" duration-ms="422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s16_Verify_that_logged_in_as_username_is_visible -->
+        <test-method signature="s17_Click_Delete_Account_button()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:28 CST" name="s17_Click_Delete_Account_button" finished-at="2025-11-03T18:42:29 CST" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s17_Click_Delete_Account_button -->
+        <test-method signature="s18_Verify_that_ACCOUNT_DELETED_is_visible_and_click_continue_button()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:29 CST" name="s18_Verify_that_ACCOUNT_DELETED_is_visible_and_click_continue_button" finished-at="2025-11-03T18:42:30 CST" duration-ms="1574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- s18_Verify_that_ACCOUNT_DELETED_is_visible_and_click_continue_button -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User@61710c6]" started-at="2025-11-03T18:42:30 CST" name="tearDown" finished-at="2025-11-03T18:42:30 CST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- interview.test_practice_1 -->
+      </class> <!-- Sprint_01.Test_Plan.HU_12345.Test_Case_01_Register_User -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
