@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuitePrincipal]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sprint1(failed)">
+    <classes>
+      <class name="Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password">
+        <methods>
+          <include name="s08_Verify_that_logged_in_as_username_is_visible"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password -->
+      <class name="Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email">
+        <methods>
+          <include name="s08_Verify_error_Email_Address_already_exist_is_visible"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email -->
+      <class name="Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User">
+        <methods>
+          <include name="s08_Verify_that_logged_in_as_username_is_visible"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User -->
+    </classes>
+  </test> <!-- Sprint1(failed) -->
+  <test thread-count="5" name="TestPorPaquetes(failed)">
+    <classes>
+      <class name="Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password">
+        <methods>
+          <include name="s08_Verify_that_logged_in_as_username_is_visible"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password -->
+      <class name="Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email">
+        <methods>
+          <include name="s08_Verify_error_Email_Address_already_exist_is_visible"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email -->
+      <class name="Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User">
+        <methods>
+          <include name="s08_Verify_that_logged_in_as_username_is_visible"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User -->
+    </classes>
+  </test> <!-- TestPorPaquetes(failed) -->
+</suite> <!-- Failed suite [SuitePrincipal] -->

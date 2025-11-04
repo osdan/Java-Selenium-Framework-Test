@@ -1,0 +1,664 @@
+<html>
+<head>
+<title>TestNG:  TestPorPaquetes</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestPorPaquetes</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>84/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 12 17:12:20 CST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>64 seconds (64846 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s08_Verify_that_logged_in_as_username_is_visible()'><b>s08_Verify_that_logged_in_as_username_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //header[@id=&apos;header&apos;]//li[10]//a[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.113, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\hard-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64128/devtoo..., se:cdpVersion: 136.0.7103.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b547990ae670ed45bcbe72a5ae1c9b18
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at automationexercise.home.HomeWebElements.getLoggedUser(HomeWebElements.java:29)
+	at Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s08_Verify_that_logged_in_as_username_is_visible(Test_Case_2_Login_User_with_correct_email_and_password.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173009186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173009186'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //header[@id=&apos;header&apos;]//li[10]//a[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.113, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\hard-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64128/devtoo..., se:cdpVersion: 136.0.7103.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b547990ae670ed45bcbe72a5ae1c9b18
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at automationexercise.home.HomeWebElements.getLoggedUser(HomeWebElements.java:29)
+	at Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s08_Verify_that_logged_in_as_username_is_visible(Test_Case_2_Login_User_with_correct_email_and_password.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s08_Verify_that_logged_in_as_username_is_visible()'><b>s08_Verify_that_logged_in_as_username_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //header[@id=&apos;header&apos;]//li[10]//a[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.113, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\hard-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64826/devtoo..., se:cdpVersion: 136.0.7103.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac4b19301ba3bb93ddabae6a2df7c173
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at automationexercise.home.HomeWebElements.getLoggedUser(HomeWebElements.java:29)
+	at Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s08_Verify_that_logged_in_as_username_is_visible(Test_Case_4_Logout_User.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace950625683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace950625683'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //header[@id=&apos;header&apos;]//li[10]//a[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.113, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\hard-\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64826/devtoo..., se:cdpVersion: 136.0.7103.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ac4b19301ba3bb93ddabae6a2df7c173
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at automationexercise.home.HomeWebElements.getLoggedUser(HomeWebElements.java:29)
+	at Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s08_Verify_that_logged_in_as_username_is_visible(Test_Case_4_Logout_User.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s08_Verify_error_Email_Address_already_exist_is_visible()'><b>s08_Verify_error_Email_Address_already_exist_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tools.asserts.AssertEqualsProperty(asserts.java:39)
+	at Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s08_Verify_error_Email_Address_already_exist_is_visible(Test_Case_5_Register_User_with_existing_email.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1300256447", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1300256447'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tools.asserts.AssertEqualsProperty(asserts.java:39)
+	at Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s08_Verify_error_Email_Address_already_exist_is_visible(Test_Case_5_Register_User_with_existing_email.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page.s04_Click_on_Test_Cases_button()'><b>s04_Click_on_Test_Cases_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page@4f32a3ad</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s15_Click_continue_button()'><b>s15_Click_continue_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s07_Click_signup_button()'><b>s07_Click_signup_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s09_Click_Delete_Account_button()'><b>s09_Click_Delete_Account_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page@4f32a3ad</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s06_Enter_incorrect_email_address_and_password()'><b>s06_Enter_incorrect_email_address_and_password</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s07_Click_signup_button()'><b>s07_Click_signup_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page@4f32a3ad</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s06_Enter_name_email_subject_and_message()'><b>s06_Enter_name_email_subject_and_message</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s06_Enter_product_name_in_search_input_and_click_search_button()'><b>s06_Enter_product_name_in_search_input_and_click_search_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s05_Verify_Login_to_your_account_is_visible()'><b>s05_Verify_Login_to_your_account_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s05_Verify_new_user_signup_is_visible()'><b>s05_Verify_new_user_signup_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s07_Verify_SEARCHED_PRODUCTS_is_visible()'><b>s07_Verify_SEARCHED_PRODUCTS_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s08_Verify_all_the_products_related_to_search_are_visible()'><b>s08_Verify_all_the_products_related_to_search_are_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s09_Click_Logout_button()'><b>s09_Click_Logout_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s07_Upload_file()'><b>s07_Upload_file</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s04_Click_on_signup_login_button()'><b>s04_Click_on_signup_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s17_Click_Delete_Account_button()'><b>s17_Click_Delete_Account_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s10_Verify_Login_to_your_account_is_visible()'><b>s10_Verify_Login_to_your_account_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s11_Select_checkbox_Receive_special_offers_from_our_partners()'><b>s11_Select_checkbox_Receive_special_offers_from_our_partners</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s09_Verify_that_detail_is_visible_ProductName_Category_Price_availability_condition_brand()'><b>s09_Verify_that_detail_is_visible_ProductName_Category_Price_availability_condition_brand</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s10_Verify_that_ACCOUNT_DELETED_is_visible()'><b>s10_Verify_that_ACCOUNT_DELETED_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s07_Click_on_View_Product_of_first_product()'><b>s07_Click_on_View_Product_of_first_product</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s04_Click_on_signup_login_button()'><b>s04_Click_on_signup_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s07_Click_login_button()'><b>s07_Click_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s05_Verify_Login_to_your_account_is_visible()'><b>s05_Verify_Login_to_your_account_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s10_Verify_success_message_Success_Your_details_have_been_submitted_successfully_is_visible()'><b>s10_Verify_success_message_Success_Your_details_have_been_submitted_successfully_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s06_Enter_correct_email_address_and_password()'><b>s06_Enter_correct_email_address_and_password</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s12_Fill_details_First_name_Last_name_Company_Address_Address2_Country_State_City_Zipcode_Mobile_Number()'><b>s12_Fill_details_First_name_Last_name_Company_Address_Address2_Country_State_City_Zipcode_Mobile_Number</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s04_Click_on_signup_login_button()'><b>s04_Click_on_signup_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s05_Verify_new_user_signup_is_visible()'><b>s05_Verify_new_user_signup_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s05_Verify_GET_IN_TOUCH_is_visible()'><b>s05_Verify_GET_IN_TOUCH_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s05_Verify_Login_to_your_account_is_visible()'><b>s05_Verify_Login_to_your_account_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s08_Click_Submit_button()'><b>s08_Click_Submit_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s13_Click_Create_Account_button()'><b>s13_Click_Create_Account_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s05_Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully()'><b>s05_Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s11_Click_Home_button_and_verify_that_landed_to_home_page_successfully()'><b>s11_Click_Home_button_and_verify_that_landed_to_home_page_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s06_Enter_name_and_email_address()'><b>s06_Enter_name_and_email_address</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page@4f32a3ad</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s08_User_is_landed_to_product_detail_page()'><b>s08_User_is_landed_to_product_detail_page</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s09_Click_OK_button()'><b>s09_Click_OK_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s06_The_Products_list_is_visible()'><b>s06_The_Products_list_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s18_Verify_that_ACCOUNT_DELETED_is_visible_and_click_continue_button()'><b>s18_Verify_that_ACCOUNT_DELETED_is_visible_and_click_continue_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s16_Verify_that_logged_in_as_username_is_visible()'><b>s16_Verify_that_logged_in_as_username_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s04_Click_on_signup_login_button()'><b>s04_Click_on_signup_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s08_Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible()'><b>s08_Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s04_Click_on_signup_login_button()'><b>s04_Click_on_signup_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page.s04_Click_on_Products_button()'><b>s04_Click_on_Products_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_8_Verify_All_Products_and_product_detail_page@6b695b06</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page.s05_Verify_user_is_navigated_to_test_cases_page_successfully()'><b>s05_Verify_user_is_navigated_to_test_cases_page_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_7_Verify_Test_Cases_Page@4f32a3ad</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s02_Navigate_to_url()'><b>s02_Navigate_to_url</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s14_Verify_that_ACCOUNT_CREATED_is_visible()'><b>s14_Verify_that_ACCOUNT_CREATED_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s08_Verify_error_Your_email_or_password_is_incorrect_is_visible()'><b>s08_Verify_error_Your_email_or_password_is_incorrect_is_visible</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password.s07_Click_login_button()'><b>s07_Click_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_2_Login_User_with_correct_email_and_password@5a59ca5e</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s03_Verify_that_home_page_is_visible_successfully()'><b>s03_Verify_that_home_page_is_visible_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s01_Launch_browser()'><b>s01_Launch_browser</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User.s07_Click_login_button()'><b>s07_Click_login_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_4_Logout_User@6c4906d3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s04_Click_on_Products_button()'><b>s04_Click_on_Products_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>1</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s09_Fill_details_Title_Name_Email_Password_Date_of_birth()'><b>s09_Fill_details_Title_Name_Email_Password_Date_of_birth</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User.s10_Select_checkbox_sign_up_for_our_newsletter()'><b>s10_Select_checkbox_sign_up_for_our_newsletter</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_1_Register_User@70cf32e3</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email.s06_Enter_name_and_already_registered_email_address()'><b>s06_Enter_name_and_already_registered_email_address</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_5_Register_User_with_existing_email@65987993</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form.s04_Click_on_Contact_Us_button()'><b>s04_Click_on_Contact_Us_button</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_6_Contact_Us_Form@71075444</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password.s06_Enter_incorrect_email_address_and_password()'><b>s06_Enter_incorrect_email_address_and_password</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_3_Login_User_with_incorrect_email_and_password@4bdeaabb</td></tr>
+<tr>
+<td title='Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product.s05_Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully()'><b>s05_Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully</b><br>Test class: Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product</td>
+<td></td>
+<td>0</td>
+<td>Sprint_1.Test_Plan.HU_12345.Test_Case_9_Search_Product@4d1bf319</td></tr>
+</table><p>
+</body>
+</html>
